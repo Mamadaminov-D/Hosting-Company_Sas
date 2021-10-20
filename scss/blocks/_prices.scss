@@ -1,0 +1,124 @@
+.prices__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+}
+
+.prices__txt {
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.catch {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cath__span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.catch::before {
+  content: '';
+  width: 400px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  background: rgb(176, 0, 0);
+  background: linear-gradient(90deg, rgba(176, 0, 0, 1) 50%, rgba(196, 196, 196, 1) 50%);
+}
+li {
+  list-style: none;
+}
+
+.div {
+  box-sizing: border-box;
+  padding: 15px 35px;
+  list-style: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 15px;
+}
+
+.cards__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 25px;
+  text-align: start;
+  color: #000000;
+}
+
+.cards__txt {
+  width: 200px;
+  text-align: start;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.cards__price {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.cards__small-txt {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: start;
+  color: #000000;
+}
+
+.cards__span {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+  padding-bottom: 10px;
+  position: relative;
+  margin-left: 15px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -35px;
+    background-image: url('/img/Checkmark.png');
+  }
+}
+
+@media screen and (max-width:990px) {
+  .div {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cards__title {
+    text-align: center;
+  }
+  .cards__txt {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cards__price {
+    text-align: center;
+  }
+  .cards__small-txt {
+  }
+}
