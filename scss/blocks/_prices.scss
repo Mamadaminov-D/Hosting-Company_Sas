@@ -15,13 +15,12 @@
 
 .catch {
   width: 300px;
+  padding-bottom: 20px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 40px;
 }
 
 .cath__span {
-  font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
@@ -29,16 +28,6 @@
   color: #000000;
 }
 
-.catch::before {
-  content: '';
-  width: 400px;
-  height: 4px;
-  position: absolute;
-  bottom: 0;
-  left: -60px;
-  background: rgb(176, 0, 0);
-  background: linear-gradient(90deg, rgba(176, 0, 0, 1) 50%, rgba(196, 196, 196, 1) 50%);
-}
 
 li {
   list-style: none;
@@ -69,6 +58,7 @@ li {
 }
 
 .cards__price {
+  text-align: center;
   font-weight: 700;
   font-size: 42px;
   line-height: 32px;
@@ -91,7 +81,6 @@ li {
   line-height: 24px;
   color: #808080;
   padding-bottom: 10px;
-  position: relative;
   margin-left: 15px;
 
   &::before {
