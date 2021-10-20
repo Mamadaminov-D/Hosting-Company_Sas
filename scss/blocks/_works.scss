@@ -1,3 +1,4 @@
+
 .works__list {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,7 @@
 @media screen and (max-width:1125px) {
   .works__list {
     display: block;
+    margin-top: -100px
     padding-left: 0;
   }
   .works__item {
@@ -43,5 +45,16 @@
 
   .works__item {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:839px) {
+  #works-section {
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width:761px) {
+  #works-section {
+    margin-top: 300px;
   }
 }

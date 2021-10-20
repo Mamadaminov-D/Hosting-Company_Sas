@@ -39,6 +39,7 @@
   background: rgb(176, 0, 0);
   background: linear-gradient(90deg, rgba(176, 0, 0, 1) 50%, rgba(196, 196, 196, 1) 50%);
 }
+
 li {
   list-style: none;
 }
@@ -83,7 +84,8 @@ li {
 }
 
 .cards__span {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -94,11 +96,10 @@ li {
 
   &::before {
     content: '';
-    display: block;
+    display: inline-block;
     width: 20px;
     height: 20px;
-    position: absolute;
-    left: -35px;
+    margin-right: 10px;
     background-image: url('/img/Checkmark.png');
   }
 }
@@ -112,13 +113,22 @@ li {
   .cards__title {
     text-align: center;
   }
+
   .cards__txt {
     margin: 0 auto;
     text-align: center;
   }
+
   .cards__price {
     text-align: center;
   }
+
   .cards__small-txt {
+    text-align: center;
+  }
+
+  .cards__span {
+    width: 200px;
+    margin: 0 auto;
   }
 }
