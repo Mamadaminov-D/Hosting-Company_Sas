@@ -1045,11 +1045,33 @@ li {
 }
 
 .crypto__div {
-  width: 350px;
+  width: 80%;
+  max-width: 350px;
   margin-top: 50px;
   padding: 20px 35px;
   -webkit-box-shadow: 0 0 20px 20px rgba(219, 216, 216, 0.534);
           box-shadow: 0 0 20px 20px rgba(219, 216, 216, 0.534);
+}
+
+.firstt {
+  margin-left: 150px;
+  padding-bottom: 100px;
+}
+
+.second {
+  width: 400px;
+  width: 90%;
+  max-width: 350px;
+  margin-top: 50px;
+  padding: 20px 35px;
+  -webkit-box-shadow: 0 0 20px 20px rgba(219, 216, 216, 0.534);
+          box-shadow: 0 0 20px 20px rgba(219, 216, 216, 0.534);
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.third {
+  margin: 0 auto;
 }
 
 .crypto__logo {
@@ -1164,6 +1186,9 @@ li {
   .prices__title {
     font-size: 20px;
   }
+  .firstt {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1193,5 +1218,28 @@ li {
   .crypto__div {
     width: 250px;
   }
+}
+
+.bg-f {
+  background-color: #b00000;
+  padding: 50px 10px;
+}
+
+.lastes {
+  margin-left: 50px;
+}
+
+.footer__txt {
+  width: 400px;
+  color: #fff;
+}
+
+.footer__item {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer__list {
+  margin-right: 50px;
 }
 /*# sourceMappingURL=main.css.map */
