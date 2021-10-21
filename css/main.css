@@ -685,20 +685,14 @@ a {
   font-size: 44px;
   line-height: 64px;
   margin-bottom: 10px;
-  -webkit-font-feature-settings: "salt" on, "liga" off;
-          font-feature-settings: "salt" on, "liga" off;
   color: #18191F;
 }
 
 .wrapper__txt {
   width: 550px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  -webkit-font-feature-settings: "salt" on, "liga" off;
-          font-feature-settings: "salt" on, "liga" off;
-  margin: 0;
+  margin: 0 auto;
   color: #18191F;
 }
 
@@ -744,7 +738,6 @@ a {
     width: 300px;
     font-size: 16px;
     line-height: 22px;
-    margin-right: 20px;
   }
   .hosting__list {
     margin-left: 20px;
@@ -766,6 +759,7 @@ a {
     text-align: center;
   }
   .wrapper__txt {
+    width: 250px;
     text-align: center;
     margin: 0 auto;
   }
@@ -793,6 +787,15 @@ a {
 @media screen and (max-width: 500px) {
   .hosting {
     margin-bottom: 300px;
+  }
+  .hosting__item:nth-child(6) {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .works__txt {
+    width: 210px;
   }
 }
 
@@ -837,6 +840,7 @@ a {
 @media screen and (max-width: 1125px) {
   .works__list {
     display: block;
+    margin-top: -100px;
     padding-left: 0;
   }
   .works__item {
@@ -863,6 +867,26 @@ a {
   #works-section {
     margin-top: 300px;
   }
+  .works__list {
+    margin-top: 50px;
+  }
+  .works__item p {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .works__item {
+    width: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .works__txt {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 .prices__title {
@@ -882,18 +906,9 @@ a {
 
 .catch {
   width: 300px;
+  padding-bottom: 10px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 40px;
-}
-
-.cath__span {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 40px;
-  text-align: center;
-  color: #000000;
 }
 
 .catch::before {
@@ -901,11 +916,20 @@ a {
   width: 400px;
   height: 4px;
   position: absolute;
-  bottom: 0;
   left: -60px;
+  bottom: -5px;
   background: #b00000;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #b00000), color-stop(50%, #c4c4c4));
   background: linear-gradient(90deg, #b00000 50%, #c4c4c4 50%);
+  margin-bottom: 10px;
+}
+
+.cath__span {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
 }
 
 li {
@@ -938,6 +962,7 @@ li {
 }
 
 .cards__price {
+  text-align: center;
   font-weight: 700;
   font-size: 42px;
   line-height: 32px;
@@ -950,6 +975,7 @@ li {
   line-height: 14px;
   text-align: start;
   color: #000000;
+  margin-bottom: 40px;
 }
 
 .cards__span {
@@ -964,7 +990,6 @@ li {
   line-height: 24px;
   color: #808080;
   padding-bottom: 10px;
-  position: relative;
   margin-left: 15px;
 }
 
@@ -974,18 +999,144 @@ li {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  background-image: url("/img/Checkmark.png");
+  background-image: url("../../img/Checkmark.png");
+}
+
+.price__btn {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 18px;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stories-div {
+  margin-top: 80px;
+}
+
+.coustomer__title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  color: #18191F;
+  margin: 8px 0;
+  position: relative;
+}
+
+.coustomer__title::before {
+  content: '';
+  width: 140px;
+  height: 120px;
+  background-image: url(/img/qowtrno.png);
+  position: absolute;
+  top: -59px;
+  left: -72px;
+}
+
+.coustomer__span {
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191F;
+  margin: 8px 0px;
+}
+
+.crypto__div {
+  width: 350px;
+  margin-top: 50px;
+  padding: 20px 35px;
+  -webkit-box-shadow: 0 0 20px 20px rgba(219, 216, 216, 0.534);
+          box-shadow: 0 0 20px 20px rgba(219, 216, 216, 0.534);
+}
+
+.crypto__logo {
+  margin-right: 150px;
+}
+
+.crypto__txt {
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  text-align: start;
+  position: relative;
+}
+
+.crypto__txt::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  background-image: url(/img/qowkok.png);
+}
+
+.crypto__name {
+  text-align: start;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #18191F;
+  margin: 0px;
+}
+
+.name__span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969BAB;
+  opacity: 0.8;
+}
+
+.homiy {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg {
+  background-color: #F7FAFE;
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+
+.webside__title {
+  width: 800px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 88px;
+  text-align: center;
+  color: #2E2E2E;
+  margin: 0 auto;
+}
+
+.bxl-whatsapp {
+  font-size: 20px;
+}
+
+.webside__btn {
+  padding: 12px 18px;
+  background-color: #b00000;
+  color: #fff;
+  display: inline-block;
+  border-radius: 8px;
+  text-align: center;
 }
 
 @media screen and (max-width: 990px) {
   .div {
-    width: 80%;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   .cards__title {
     text-align: center;
   }
   .cards__txt {
+    width: 150px;
     margin: 0 auto;
     text-align: center;
   }
@@ -998,6 +1149,49 @@ li {
   .cards__span {
     width: 200px;
     margin: 0 auto;
+  }
+  .crypto__div {
+    margin-left: 10px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .coustomer__title {
+    font-size: 36px;
+  }
+  .coustomer__title::before {
+    display: none;
+  }
+  .prices__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #webside-section {
+    margin-top: 300px;
+  }
+  .webside__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .webside__title {
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .prices__title {
+    font-size: 20px;
+  }
+  .crypto__div {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=main.css.map */

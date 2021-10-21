@@ -33,9 +33,10 @@
 @media screen and (max-width:1125px) {
   .works__list {
     display: block;
-    margin-top: -100px
-    padding-left: 0;
+    margin-top: -100px;
+  padding-left: 0;
   }
+
   .works__item {
     width: 300px;
     flex-wrap: wrap;
@@ -57,4 +58,26 @@
   #works-section {
     margin-top: 300px;
   }
+
+  .works__list {
+    margin-top: 50px;
+  }
+
+  .works__item p {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+ .works__item {
+   width: 300px;
+   align-items: center;
+   margin: 0 auto;
+ }
+
+ .works__txt {
+   width: 200px;
+   margin: 0 auto;
+ }
 }
